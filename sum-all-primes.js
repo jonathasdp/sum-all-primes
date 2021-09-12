@@ -1,13 +1,13 @@
 function sumPrimes(num) {
-  function isPrimeNumber(quocient) {
-    let divisor = quocient - 1;
+  function isPrimeNumber(dividend) {
+    let divisor = dividend - 1;
     while (divisor > 1) {
-      if (quocient % divisor === 0) {
+      if (dividend % divisor === 0) {
         return false;
       }
       divisor--;
     }
-    return quocient > 1;
+    return dividend > 1;
   }
   let result = 0;
   while (num > 1) {
